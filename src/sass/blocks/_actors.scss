@@ -1,0 +1,108 @@
+.actors {
+    padding-top: 64px;
+    // .actors__container
+    &__container {
+        overflow: hidden;
+    }
+    // .actors__title
+    &__title {
+        margin-bottom: 64px;
+    }
+    // .actors__carousel
+    
+    // .actors__item
+    &__item {
+        width: 182px;
+        display: block;
+    }
+    // .actors__img
+    &__img {
+        width: 182px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    // .actors__name
+    &__name {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 12px;
+    }
+}
+
+.owl-four {
+    position: relative;
+    margin: 0 auto 0 0;
+    width: 100%;
+    @media (min-width:1199px) {
+        width: 1110px;
+    }
+    .owl-stage-outer {
+        overflow: visible!important;
+    }
+    .owl-nav {
+        .owl-next{
+            position: absolute;
+            top: 40%;
+            right: -125px;
+            transform: translateY(-50%);
+            &:before {
+                content:'\e906';
+                font-family: 'icons';
+                color: #fff;
+                font-size: 36px;
+            }
+        }
+        .owl-prev{
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: -145px;
+            transform:translateY(-50%);
+            &:before {
+                content:'\e90a';
+                font-family: 'icons';
+                color: #fff;
+                transform: rotate(180deg);
+                font-size: 36px;
+            }
+        }
+        
+    }
+    .owl-item {
+        cursor: pointer;
+        display: block;
+        .actors__img {
+            position: relative;
+            &:before {
+                content:'';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(0,0,0,0.75);
+                transition: all 0.3s ease;
+                border-radius: 50%;
+                z-index: 10;
+            }
+        }
+        .actors__name {
+            color: #656565;
+        }
+    }
+    .owl-item.active {
+        .actors__img {
+            &:before {
+                background-color: rgba(0,0,0,0);
+            }
+        }
+        .actors__name {
+            color: #ffffff;
+        }
+    }
+}

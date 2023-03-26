@@ -1,0 +1,297 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        &__menu {
+            width: 450px;
+        }
+        &__link {
+            font-size: 16px;
+        }
+    }
+    .profile-header {
+        &__regist {
+            font-size: 18px;
+            padding: 5px 20px;
+            margin-left: 10px;
+        }
+    }
+    .banner {
+        background-position: 40% 50%;
+    }
+    .footer {
+        &__main {
+            flex: 0 1 45%;
+        }
+        &__contacts {
+            flex: 0 1 230px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 760px;
+    }
+    .search-form {
+        &._active {
+            .search-form__item {
+                opacity: 1;
+                top: 110%;
+                visibility: visible;
+            }
+            .search-form__icon {
+                color: $pink-color;
+            }
+        }
+        &__icon {
+            display: block;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        &__item {
+            position: absolute;
+            top: 90%;
+            left: 5%;
+            width: 90%;
+            margin: 0 ;
+            z-index: 5;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease 0s;
+        }
+        &__input {
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            color: rgb(0, 0, 0);
+        }
+    }
+    .banner {
+        background-position: 40% 50%;
+    }
+    .footer {
+        &__container {
+            justify-content: center;
+        }
+        &__main {
+            flex: 0 1 50%;
+            order: 1;
+        }
+        &__social {
+            flex: 0 0 100%;
+            order: 3;
+            margin-top: 20px;
+            &-items {
+                margin-bottom: 20px;
+            }
+        }
+        &__contacts {
+            order: 2;
+        }
+    }
+    .watch {
+        &__item {
+            width: 50px;
+        }
+    }
+    .subscription {
+        &__item {
+            flex: 0 1 350px;
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 580px;
+    }
+    .header {
+        width: 100%;
+        position: fixed;
+        z-index: 5;
+        height: 60px;
+        padding: 7px 15px;
+        &__burger {
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            z-index: 10;
+            span {
+                position: absolute;
+                width: 30px;
+                height: 3px;
+                background-color: #fff;
+                left: 5px;
+                top: 18px;
+                transition: all 0.3s ease-out;
+                &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #fff;
+                    top: -10px;       
+                    transition: all 0.3s ease-out;
+                }
+                &:after {
+                    top: 10px;
+                }
+            }
+        }
+        &__container {
+            justify-content: flex-start;
+        }
+        &__logo {
+            margin-left: auto;
+        }
+        &__menu {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            background-color: $main-color;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 80px 0;
+            transition: all 0.3s ease;
+            z-index: 1;
+            overflow: auto;
+        }
+        &__item {
+            margin-top: 20px;
+        }
+        &__list {
+            width: 100%;
+            display: block;
+        }
+        &__link {
+            font-size: 25px;
+        }
+        &.active {
+            .header__menu {
+                left: 0;
+            }
+            .header__burger {
+                span {
+                    width: 0;
+                    &:before {
+                        transform: rotate(45deg);
+                        top: 0;
+                    }
+                    &:after {
+                        transform: rotate(-45deg);
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        background-position: 35% 50%;
+        &__wrapper {
+            width: 300px;
+        }
+        &__logo {
+            right: -100px;
+        }
+        &__title {
+            font-size: 50px;
+            line-height: 58px;
+        }
+        &__subtitle {
+            font-size: 35px;
+            line-height: 38px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    .footer {
+        &__main {
+            display: block;
+        }
+        &__logo {
+            max-width: 120px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        &__contacts {
+            margin-top: 30px;
+        }
+    }
+    .subscription {
+        &__item {
+            flex: 0 1 408px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header {
+        padding: 5px 0;
+        
+    }
+    .profile-header {
+        &__regist {
+            padding: 3px 5px;
+            margin-left: 5px;
+            font-size: 14px;
+            border-radius:6px
+        }
+    }
+    .banner {
+        background-position: 60% 50%;
+        &__wrapper {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        &__logo {
+            position: relative;
+            left: 0;
+            width: 150px;
+            display: inline-block;
+            img{
+                width: 100%;
+                display: block;
+            }
+        }
+        &__title {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+    .footer {
+        &__main {
+            display: block;
+            flex:1 1 100%;
+            text-align: center;
+        }
+        &__list {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        &__logo {
+            margin: 0 auto;
+        }
+        &__contacts {
+            margin-top: 20px;
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+    .subscription {
+        &__item {
+            flex: 0 1 100%;
+        }
+    }
+}

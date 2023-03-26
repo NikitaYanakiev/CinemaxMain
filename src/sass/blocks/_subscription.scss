@@ -1,0 +1,114 @@
+.subscription {
+    padding: 64px 0;
+    // .subscription__container
+    &__container {
+    }
+    // .subscription__title
+    &__title {
+    }
+    // .subscription__body
+    &__body {
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width:1200px) {
+            justify-content: center;
+        }
+    }
+    // .subscription__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 380px;
+        background: $main-color;
+        @include adaptiv-value("padding", 32, 20, 1);
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        margin: 20px 10px ;
+        @media (max-width:768px) {
+            flex: 0 1 270px;
+        }
+        &_max {
+            background: linear-gradient(28.47deg, #009ACB 3.54%, #3B00B1 56.9%, #A515ED 100.1%);
+        }
+        &:hover {
+            box-shadow: 0px 0px 12px 3px $pink-color;
+        }
+        // .subscription__item-title
+        &-title {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            @include adaptiv-value("font-size", 36, 30, 1);
+            line-height: 46px;
+            color: #FFFFFF;
+            @include adaptiv-value("margin-bottom", 32, 10, 1);
+        }
+        // .subscription__item-price
+        &-price {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 46px;
+            color: #FFFFFF;
+            @include adaptiv-value("margin-bottom", 32, 10, 1);
+        }
+        // .subscription__item-list
+        &-list {
+            @include adaptiv-value("margin-bottom", 32, 10, 1);
+            flex: 1 1 auto;
+        }
+        // .subscription__item-text
+        &-text {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+            &:before {
+                font-family: 'icons';
+                margin-right: 11px;
+            }
+        }
+        // .subscription__item-btn
+        &-btn {
+            width: 132px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+    &__pink {
+        color: $pink-color;
+        font-weight: 400;
+        &-price {
+            @include adaptiv-value("font-size", 36, 30, 1);
+            color: $pink-color;
+        }
+    }
+    &__yellow {
+        color: #FFD500;
+        font-weight: 400;
+        &-price {
+            @include adaptiv-value("font-size", 36, 30, 1);
+            color: #FFD500;
+        }
+    }
+    &__blue {
+        color: #00AEE4;
+        font-weight: 400;
+        &-price {
+            @include adaptiv-value("font-size", 36, 30, 1);
+            color: #00AEE4;
+        }
+    }
+   
+}
+
+// ._icon-check
+._icon-check {
+}
+.btn {
+}

@@ -1,0 +1,122 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: $main-color;
+    padding: 17px 15px;
+    border-radius: 0px 0px 16px 16px;
+    z-index: 50;
+    // .header__container
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__burger {
+        display: none;
+    }
+    // .header__logo
+    &__logo {
+        flex:0 0 100px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    // .header__menu
+    &__menu {
+        flex: 0 1 600px;
+        ._icon-other {
+            font-size: 24px;
+        }
+    }
+    // .header__list
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    // .header__link
+    &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        transition: all 0.3s ease;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            // z-index: 1000;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: $pink-color;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+        &:hover {
+            color:$pink-color;
+            &:before {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+    }
+    // .header__search
+   
+    // .header__profile
+    &__profile {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.search-form {
+    // .search-form__icon
+    &__icon {
+        display: none;
+    }
+    // .search-form__item
+    &__item {
+        position: relative;
+        width: 220px;
+        margin: 0 10px;
+    }
+    // .search-form__btn
+    &__btn {
+        position: absolute;
+        right: 13px;
+        top: 13px;
+        color: #B4B4B4;
+    }
+    // .search-form__input
+    &__input {
+        width: 100%;
+        padding: 10px 16px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid $purple-color;
+        border-radius: 16px;
+        color:#fff;
+    }
+}
+.profile-header {
+    // .profile-header__icon
+    &__icon {
+        font-size: 24px;
+
+    }
+    // .profile-header__regist
+    &__regist {
+        margin-left: 16px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+

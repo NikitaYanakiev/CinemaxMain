@@ -1,0 +1,58 @@
+.banner {
+    background: url('../img/bg_main.jpg') no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    min-height: 100vh;
+    padding: 100px 0;
+    // .banner__wrapper
+    &__wrapper {
+        max-width: 500px;
+        margin: auto 0;
+    }
+    // .banner__body
+    &__body {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    // .banner__title
+    &__title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 74px;
+        color: $main-color;
+    }
+    // .banner__logo
+    &__logo {
+        font-family: 'Open Sans';
+        font-weight: normal;
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+    }
+    // .banner__subtitle
+    &__subtitle {
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 50px;
+        color: $pink-color;
+        margin-bottom: 32px;
+    }
+    // .banner__text
+    
+    // .banner__subtext
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        width: 335px;
+        color: #000000;
+        margin-bottom: 50px;
+    }
+    // .banner__btn
+    
+}
+

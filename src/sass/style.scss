@@ -1,0 +1,39 @@
+@import 'base/null';
+@import 'libs/owl.carousel.min';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Open+Sans:wght@600&family=Roboto:wght@100;300;400;500&display=swap');
+@import 'base/mixins';
+@import 'base/variables';
+@import 'libs/fontsicon';
+
+* {
+    font-family: 'Roboto', 'Open Sans', 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg-color;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/banner';
+@import 'blocks/footer';
+@import 'blocks/title';
+@import 'blocks/films';
+@import 'blocks/genres';
+@import 'blocks/selection';
+@import 'blocks/actors';
+@import 'blocks/subscription';
+@import 'blocks/preloader';
+
+@import 'blocks/media';

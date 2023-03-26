@@ -1,0 +1,14 @@
+.btn {
+    padding: 8px 32px;
+    height: 46px;
+    background: $pink-color;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background: #9c1c5a;
+    }
+}
+
+
